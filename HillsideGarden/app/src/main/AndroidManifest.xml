@@ -8,9 +8,9 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:screenOrientation="landscape"
             android:name="sample.HillsideGarden.ActivityFirst"
             android:label="@string/title_activity_activity_first"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,16 +18,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:screenOrientation="landscape"
             android:name="sample.HillsideGarden.ActivitySecond"
             android:label="@string/title_activity_activity_second"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:screenOrientation="landscape"
             android:name="sample.HillsideGarden.ActivityThird"
             android:label="@string/title_activity_activity_third"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
