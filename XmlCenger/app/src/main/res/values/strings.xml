@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">XmlCenger</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_first">ActivityFirst</string>
+    <string name="title_activity_activity_second">ActivitySecond</string>
+    <string name="title_activity_activity_third">ActivityThird</string>
+</resources>
