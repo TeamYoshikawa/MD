@@ -13,4 +13,6 @@
     <string name="title_activity_activity_floor_map">ActivityFloorMap</string>
     <string name="title_activity_activity_access">ActivityAccess</string>
     <string name="title_activity_activity_experience">ActivityExperience</string>
+    <string name="title_activity_activity_menu">ActivityMenu</string>
+    <string name="title_activity_activity_main">ActivityMain</string>
 </resources>
