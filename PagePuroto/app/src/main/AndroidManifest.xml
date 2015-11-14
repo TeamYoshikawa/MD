@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sample.pagepuroto" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".MenuPage"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".Wain"
+            android:label="Wain"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".Italian"
+            android:label="Italian"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".French"
+            android:label="French"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".Chapel"
+            android:label="Chapel"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".Garden"
+            android:label="Garden"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".OriginalWedding"
+            android:label="OriginalWedding"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+    </application>
+
+</manifest>

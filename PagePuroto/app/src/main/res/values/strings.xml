@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PagePuroto</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_page">MenuPage</string>
+    <string name="title_activity_wain">wain</string>
+    <string name="title_activity_itarian">itarian</string>
+    <string name="title_activity_frence">Frence</string>
+    <string name="title_activity_chabel">Chabel</string>
+    <string name="title_activity_guarden">Guarden</string>
+    <string name="title_activity_original_weding">OriginalWeding</string>
+</resources>
