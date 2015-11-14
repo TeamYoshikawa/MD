@@ -59,11 +59,7 @@
             android:label="@string/title_activity_activity_wain"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".ActivityWine"
-            android:label="@string/title_activity_activity_wine"
-            android:screenOrientation="landscape"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+
         <activity
             android:name=".ActivityFloorMap"
             android:label="@string/title_activity_activity_floor_map"
@@ -82,3 +78,6 @@
     </application>
 
 </manifest>
+
+
+
