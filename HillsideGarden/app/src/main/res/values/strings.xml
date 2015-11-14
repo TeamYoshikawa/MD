@@ -4,4 +4,5 @@
     <string name="title_activity_activity_first">ActivityFirst</string>
     <string name="title_activity_activity_second">ActivitySecond</string>
     <string name="title_activity_activity_third">ActivityThird</string>
+    <string name="title_activity_activity_chapel">ActivityChapel</string>
 </resources>
