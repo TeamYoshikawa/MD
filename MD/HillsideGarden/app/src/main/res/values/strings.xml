@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HillsideGarden</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_chapel">ActivityChapel</string>
+    <string name="title_activity_activity_description">ActivityDescription</string>
+    <string name="title_activity_activity_cover">ActivityCover</string>
+    <string name="title_activity_activity_italian">ActivityItalian</string>
+    <string name="title_activity_activity_french">ActivityFrench</string>
+    <string name="title_activity_activity_weddeing">ActivityWeddeing</string>
+    <string name="title_activity_activity_garden">ActivityGarden</string>
+    <string name="title_activity_activity_wain">ActivityWain</string>
+    <string name="title_activity_activity_wine">ActivityWine</string>
+    <string name="title_activity_activity_floor_map">ActivityFloorMap</string>
+    <string name="title_activity_activity_access">ActivityAccess</string>
+    <string name="title_activity_activity_experience">ActivityExperience</string>
+</resources>
