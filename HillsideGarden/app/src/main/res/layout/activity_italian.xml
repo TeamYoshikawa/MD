@@ -8,7 +8,25 @@
     tools:context="sample.xmlcenger.Italian">
 
 
-    <include layout="@layout/content_italian" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".French">
+
+        <ImageView
+            android:id="@+id/page011"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/pages014" />
+        />
+    </RelativeLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>
