@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="sample.HillsideGarden.ActivityDescription">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_activity_description" />
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityMenu">
+
+        <ImageView
+            android:id="@+id/t_h_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/t_h_t"
+            android:adjustViewBounds="false"
+            android:baselineAlignBottom="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+
+        <ImageButton
+            android:id="@+id/menu_bt001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_bt001"
+            android:onClick="onClick"
+            android:background="@null"
+
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/menu_bt002"
+            android:layout_toStartOf="@+id/menu_bt002" />
+
+        <ImageButton
+            android:id="@+id/menu_bt002"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_bt002"
+            android:onClick="onClick"
+            android:background="@null"
+            android:layout_marginTop="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="46dp"
+            android:layout_marginEnd="46dp" />
+
+        <ImageButton
+            android:id="@+id/menu_bt004"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_bt004"
+            android:onClick="onClick"
+            android:background="@null"
+
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="24dp"
+            android:layout_alignTop="@+id/menu_bt002"
+            android:layout_toLeftOf="@+id/menu_bt005" />
+
+        <ImageButton
+            android:id="@+id/menu_bt005"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_bt005"
+            android:onClick="onClick"
+            android:background="@null"
+
+            android:layout_alignTop="@+id/menu_bt001"
+            android:layout_toLeftOf="@+id/menu_bt001"
+            android:layout_toStartOf="@+id/menu_bt001" />
+
+
+
+        <ImageButton
+            android:id="@+id/menu_bt006"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_bt006"
+            android:onClick="onClick"
+            android:background="@null"
+
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/menu_bt005"
+            android:layout_marginBottom="54dp" />
+
+        <ImageButton
+            android:id="@+id/menu_bt007"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_bt007"
+            android:onClick="onClick"
+            android:background="@null"
+
+            android:layout_marginStart="19dp"
+
+            android:layout_alignTop="@+id/menu_bt006"
+            android:layout_toRightOf="@+id/menu_bt001" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
