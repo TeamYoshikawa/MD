@@ -26,69 +26,21 @@
         android:layout_height="match_parent"
         tools:context=".ActivityMenu">
 
-        <TextView
-            android:text="イタリアン"
+        <ImageView
+            android:src="@drawable/menu_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView1"
-            android:layout_below="@+id/imageButton"
-            android:layout_toRightOf="@+id/imageButton4"
-            android:layout_toEndOf="@+id/imageButton4" />
+            />
 
-        <TextView
-            android:text="ウェディング"
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_above="@+id/imageButton"
-            android:layout_toRightOf="@+id/imageButton4"
-            android:layout_toEndOf="@+id/imageButton4"
-            android:layout_marginBottom="16dp" />
-        <TextView
-            android:text="チャペル"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:layout_marginBottom="14dp"
-            android:layout_alignBottom="@+id/imageButton4"
-            android:layout_alignLeft="@+id/imageButton"
-            android:layout_alignStart="@+id/imageButton"
-            android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp" />
-        <TextView
-            android:text="フレンチ"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView4"
-            android:layout_alignBaseline="@+id/textView2"
-            android:layout_alignBottom="@+id/textView2"
-            android:layout_toRightOf="@+id/imageButton5"
-            android:layout_toEndOf="@+id/imageButton5" />
-        <TextView
-            android:text="ワイン"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView5"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/imageButton6"
-            android:layout_toEndOf="@+id/imageButton6" />
-        <TextView
-            android:text="ガーデン"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView6"
-            android:layout_below="@+id/textView5"
-            android:layout_alignLeft="@+id/imageButton5"
-            android:layout_alignStart="@+id/imageButton5"
-            android:layout_marginTop="11dp" />
-        <TextView
-            android:text="メニュー"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:layout_alignTop="@+id/imageButton5"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:text="MAP"
+            android:background="#"
+
+            />
+
+
 
         <ImageButton
             android:onClick="onClick"
@@ -97,11 +49,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="46dp"
-            android:layout_marginEnd="46dp" />
+            android:layout_alignTop="@+id/imageButton5"
+            android:layout_toRightOf="@+id/imageButton3"
+            android:layout_toEndOf="@+id/imageButton3" />
 
 
         <ImageButton
@@ -111,11 +61,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton2"
-            android:layout_above="@+id/imageButton"
-            android:layout_alignRight="@+id/imageButton"
-            android:layout_alignEnd="@+id/imageButton"
-            android:layout_marginRight="54dp"
-            android:layout_marginEnd="54dp" />
+            android:layout_alignBottom="@+id/imageButton3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp" />
 
         <ImageButton
             android:onClick="onClick3"
@@ -124,9 +74,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton3"
-            android:layout_below="@+id/imageButton7"
-            android:layout_toRightOf="@+id/imageButton7"
-            android:layout_toEndOf="@+id/imageButton7" />
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_below="@+id/imageButton5"
+            android:layout_alignLeft="@+id/imageButton5"
+            android:layout_alignStart="@+id/imageButton5"
+            android:layout_marginTop="13dp" />
 
         <ImageButton
             android:onClick="onClick4"
@@ -135,11 +88,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton4"
-            android:layout_below="@+id/imageButton"
-            android:layout_alignRight="@+id/imageButton2"
-            android:layout_alignEnd="@+id/imageButton2"
-            android:layout_marginRight="34dp"
-            android:layout_marginEnd="34dp" />
+
+            android:layout_marginTop="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:onClick="onClick5"
@@ -148,9 +101,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton5"
-            android:layout_above="@+id/imageButton7"
-            android:layout_toLeftOf="@+id/imageButton6"
-            android:layout_toStartOf="@+id/imageButton6" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/imageButton4"
+            android:layout_toRightOf="@+id/imageButton6"
+            android:layout_toEndOf="@+id/imageButton6" />
 
         <ImageButton
             android:onClick="onClick6"
@@ -159,8 +114,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton6"
-            android:layout_above="@+id/imageButton3"
-            android:layout_centerHorizontal="true" />
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignBottom="@+id/imageButton3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:onClick="onClick7"
@@ -169,9 +128,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton7"
-            android:layout_alignTop="@+id/imageButton"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+
+            android:layout_alignTop="@+id/imageButton4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 
 

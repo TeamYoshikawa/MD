@@ -78,7 +78,7 @@ public class ActivityMenu extends Activity implements OnClickListener {
 
 
             case R.id.imageButton3:
-                //イタリアンのページに飛ぶボタン（本来無いっぽい）
+                //試着大剣に飛ぶボタン
                 intent = new Intent(this, ActivityItalian.class);
                 startActivity(intent);
             break;
