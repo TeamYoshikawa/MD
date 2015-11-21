@@ -18,7 +18,8 @@ public class ActivityMenu extends Activity implements OnClickListener {
     private ImageButton imageButton5;
     private ImageButton imageButton6;
     private ImageButton imageButton7;
-
+    private ImageButton imageButton8;
+    private ImageButton imageButton9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,8 @@ public class ActivityMenu extends Activity implements OnClickListener {
         imageButton5=(ImageButton)findViewById(R.id.imageButton5);
         imageButton6=(ImageButton)findViewById(R.id.imageButton6);
         imageButton7=(ImageButton)findViewById(R.id.imageButton7);
+        imageButton8=(ImageButton)findViewById(R.id.imageButton8);
+        imageButton9=(ImageButton)findViewById(R.id.imageButton9);
 
         imageButton.setOnClickListener(this);
         imageButton2.setOnClickListener(this);
@@ -39,8 +42,8 @@ public class ActivityMenu extends Activity implements OnClickListener {
         imageButton5.setOnClickListener(this);
         imageButton6.setOnClickListener(this);
         imageButton7.setOnClickListener(this);
-
-
+        imageButton8.setOnClickListener(this);
+        imageButton9.setOnClickListener(this);
     }
 
     @Override
@@ -79,7 +82,7 @@ public class ActivityMenu extends Activity implements OnClickListener {
 
             case R.id.imageButton3:
                 //試着大剣に飛ぶボタン
-                intent = new Intent(this, ActivityItalian.class);
+                intent = new Intent(this, ActivityTitle.class);
                 startActivity(intent);
             break;
 
@@ -108,6 +111,17 @@ public class ActivityMenu extends Activity implements OnClickListener {
 
                 break;
 
+            case R.id.imageButton8:
+                //アクセスのページに飛ぶボタン
+                intent = new Intent (this,ActivityAccess.class);
+                startActivity(intent);
+
+                break;
+
+            case R.id.imageButton9:
+                //フロアマップのページに飛ぶボタン
+                intent = new Intent (this,ActivityFloorMap.class);
+                startActivity(intent);
         }
     }
 }
