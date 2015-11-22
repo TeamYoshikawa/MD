@@ -27,11 +27,6 @@
         android:layout_height="match_parent"
         tools:context=".ActivityCover">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pages009"
-            />
 
         <ImageButton
             android:id="@+id/button"
@@ -63,6 +58,12 @@
             android:layout_alignTop="@+id/button2"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pages009"
+            />
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

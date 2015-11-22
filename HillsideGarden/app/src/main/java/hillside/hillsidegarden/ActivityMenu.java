@@ -122,6 +122,7 @@ public class ActivityMenu extends Activity implements OnClickListener {
                 //フロアマップのページに飛ぶボタン
                 intent = new Intent (this,ActivityFloorMap.class);
                 startActivity(intent);
+                break;
         }
     }
 }
