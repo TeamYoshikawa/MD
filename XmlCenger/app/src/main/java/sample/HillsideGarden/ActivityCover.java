@@ -39,7 +39,7 @@ public class ActivityCover extends Activity {
     public void onClick(View view){
         switch (view.getId()){
             case R.id.btnToSecond:
-                Intent intent = new Intent(this, ActivityDescription.class);
+                Intent intent = new Intent(getApplicationContext(), ActivityDescription.class);
                 startActivity(intent);
                 break;
         }
