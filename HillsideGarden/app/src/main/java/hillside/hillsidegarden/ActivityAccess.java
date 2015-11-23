@@ -6,24 +6,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ImageButton;
 
 
-public class ActivityAccess extends Activity implements OnClickListener{
 
-    private ImageButton imageButton;
-    private ImageButton imageButton2;
+
+public class ActivityAccess extends Activity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_access);
-
-        imageButton=(ImageButton)findViewById(R.id.imageButton);
-        imageButton2=(ImageButton)findViewById(R.id.imageButton2);
-
-        imageButton.setOnClickListener(this);
-        imageButton2.setOnClickListener(this);
     }
 
     @Override
@@ -43,16 +36,12 @@ public class ActivityAccess extends Activity implements OnClickListener{
         return super.onOptionsItemSelected(item);
     }
 
-    //ボタン処理
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.imageButton:
-                Intent intent = new Intent(this, ActivityMenu.class);
-                startActivity(intent);
-                break;
 
-            case R.id.imageButton2:
-                intent =new Intent(this,ActivityFloorMap.class);
+    //ボタンの処理
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.button:
+                Intent intent = new Intent(this, ActivityMenu.class);
                 startActivity(intent);
                 break;
         }

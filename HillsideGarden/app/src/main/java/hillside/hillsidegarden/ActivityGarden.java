@@ -6,28 +6,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ImageButton;
 
 
-public class ActivityGarden extends Activity implements OnClickListener{
 
-    private ImageButton imageButton;
-    private ImageButton imageButton2;
-    private ImageButton imageButton3;
+
+public class ActivityGarden extends Activity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_garden);
-
-        imageButton=(ImageButton)findViewById(R.id.imageButton);
-        imageButton2=(ImageButton)findViewById(R.id.imageButton2);
-        imageButton3=(ImageButton)findViewById(R.id.imageButton3);
-
-        imageButton.setOnClickListener(this);
-        imageButton2.setOnClickListener(this);
-        imageButton3.setOnClickListener(this);
     }
 
     @Override
@@ -47,26 +36,14 @@ public class ActivityGarden extends Activity implements OnClickListener{
         return super.onOptionsItemSelected(item);
     }
 
-    //ボタン処理
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.imageButton:
+
+    //ボタンの処理
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.button:
                 Intent intent = new Intent(this, ActivityMenu.class);
                 startActivity(intent);
                 break;
-
-            case R.id.imageButton2:
-                //→ボタン
-                intent =new Intent(this,ActivityFrench.class);
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton3:
-                //←ボタン
-                intent =new Intent(this,ActivityChapel.class);
-                startActivity(intent);
-                break;
-
         }
     }
 }
