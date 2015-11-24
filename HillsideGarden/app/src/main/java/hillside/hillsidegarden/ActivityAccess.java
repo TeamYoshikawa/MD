@@ -39,13 +39,16 @@ public class ActivityAccess extends Activity implements OnClickListener{
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
-        }
+    }
         return super.onOptionsItemSelected(item);
     }
 
     //ボタン処理
-    public void onClick(View view) {
+
+        public void onClick(View view) {
+            finish();
         switch (view.getId()) {
+
             case R.id.imageButton:
                 Intent intent = new Intent(this, ActivityMenu.class);
                 startActivity(intent);

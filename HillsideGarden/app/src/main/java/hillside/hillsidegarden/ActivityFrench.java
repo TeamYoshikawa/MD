@@ -49,22 +49,26 @@ public class ActivityFrench extends Activity implements OnClickListener{
 
     //ボタン処理
     public void onClick(View view) {
+        Intent intent;
         switch (view.getId()) {
             case R.id.imageButton:
-                Intent intent = new Intent(this, ActivityMenu.class);
+                intent = new Intent(this, ActivityMenu.class);
                 startActivity(intent);
+
                 break;
 
             case R.id.imageButton2:
                 //→ボタン
-                intent =new Intent(this,ActivityItalian.class);
+                intent = new Intent(this, ActivityItalian.class);
                 startActivity(intent);
+                finish();
                 break;
 
             case R.id.imageButton3:
                 //←ボタン
-                intent =new Intent(this,ActivityGarden.class);
+                intent = new Intent(this, ActivityGarden.class);
                 startActivity(intent);
+                finish();
                 break;
 
         }

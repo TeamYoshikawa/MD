@@ -124,6 +124,7 @@ public class ActivityMenu extends Activity implements OnClickListener {
                 startActivity(intent);
                 break;
         }
+        finish();
     }
 }
 

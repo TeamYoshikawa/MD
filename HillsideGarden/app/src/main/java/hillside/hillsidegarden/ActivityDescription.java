@@ -43,6 +43,7 @@ public class ActivityDescription extends Activity {
             case R.id.button:
                 Intent intent = new Intent(this, ActivityMenu.class);
                 startActivity(intent);
+                finish();
                 break;
         }
     }

@@ -43,6 +43,7 @@ public class ActivityCover extends Activity {
             case R.id.button:
                 Intent intent = new Intent(this, ActivityDescription.class);
                 startActivity(intent);
+                finish();
                 break;
         }
     }

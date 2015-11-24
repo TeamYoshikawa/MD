@@ -22,7 +22,7 @@ public class ActivityTitle extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // メニューに項目がある場合に項目を追加する
-        getMenuInflater().inflate(R.menu.menu_activity_cover, menu);
+        getMenuInflater().inflate(R.menu.menu_activity_title, menu);
         return true;
     }
 
@@ -43,6 +43,7 @@ public class ActivityTitle extends Activity {
             case R.id.button:
                 Intent intent = new Intent(this, ActivityCover.class);
                 startActivity(intent);
+                finish();
                 break;
         }
     }

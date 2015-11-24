@@ -2,6 +2,7 @@ package hillside.hillsidegarden;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 
 
-public class ActivityGarden extends Activity implements OnClickListener{
+public class ActivityGarden extends Activity implements OnClickListener {
 
     private ImageButton imageButton;
     private ImageButton imageButton2;
@@ -21,9 +22,12 @@ public class ActivityGarden extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_garden);
 
-        imageButton=(ImageButton)findViewById(R.id.imageButton);
-        imageButton2=(ImageButton)findViewById(R.id.imageButton2);
-        imageButton3=(ImageButton)findViewById(R.id.imageButton3);
+        View view1=new View(this);
+view1.setBackgroundColor(Color.argb(128, 255, 0, 0));
+        setContentView(view1);
+        imageButton = (ImageButton) findViewById(R.id.imageButton);
+        imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
+        imageButton3 = (ImageButton) findViewById(R.id.imageButton3);
 
         imageButton.setOnClickListener(this);
         imageButton2.setOnClickListener(this);
@@ -49,24 +53,30 @@ public class ActivityGarden extends Activity implements OnClickListener{
 
     //ボタン処理
     public void onClick(View view) {
+        Intent intent;
         switch (view.getId()) {
             case R.id.imageButton:
-                Intent intent = new Intent(this, ActivityMenu.class);
+                intent = new Intent(this, ActivityMenu.class);
                 startActivity(intent);
+                finish();
                 break;
+
 
             case R.id.imageButton2:
                 //→ボタン
-                intent =new Intent(this,ActivityFrench.class);
+                intent = new Intent(this, ActivityFrench.class);
                 startActivity(intent);
+                finish();
                 break;
 
             case R.id.imageButton3:
                 //←ボタン
-                intent =new Intent(this,ActivityChapel.class);
+                intent = new Intent(this, ActivityChapel.class);
                 startActivity(intent);
+                finish();
                 break;
 
         }
+
     }
 }
