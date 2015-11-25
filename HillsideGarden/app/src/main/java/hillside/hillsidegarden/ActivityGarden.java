@@ -22,9 +22,7 @@ public class ActivityGarden extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_garden);
 
-        View view1=new View(this);
-view1.setBackgroundColor(Color.argb(128, 255, 0, 0));
-        setContentView(view1);
+
         imageButton = (ImageButton) findViewById(R.id.imageButton);
         imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
         imageButton3 = (ImageButton) findViewById(R.id.imageButton3);
@@ -56,9 +54,8 @@ view1.setBackgroundColor(Color.argb(128, 255, 0, 0));
         Intent intent;
         switch (view.getId()) {
             case R.id.imageButton:
-                intent = new Intent(this, ActivityMenu.class);
+                 intent = new Intent(this, ActivityMenu.class);
                 startActivity(intent);
-                finish();
                 break;
 
 
@@ -66,17 +63,17 @@ view1.setBackgroundColor(Color.argb(128, 255, 0, 0));
                 //→ボタン
                 intent = new Intent(this, ActivityFrench.class);
                 startActivity(intent);
-                finish();
+
                 break;
 
             case R.id.imageButton3:
                 //←ボタン
                 intent = new Intent(this, ActivityChapel.class);
                 startActivity(intent);
-                finish();
+
                 break;
 
         }
-
+        finish();
     }
 }

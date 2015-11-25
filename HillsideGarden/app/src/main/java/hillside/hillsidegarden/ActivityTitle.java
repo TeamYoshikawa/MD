@@ -39,9 +39,10 @@ public class ActivityTitle extends Activity {
 
     //ボタンの処理
     public void onClick(View view){
+        Intent intent;
         switch (view.getId()){
             case R.id.button:
-                Intent intent = new Intent(this, ActivityCover.class);
+                intent = new Intent(this, ActivityCover.class);
                 startActivity(intent);
                 finish();
                 break;

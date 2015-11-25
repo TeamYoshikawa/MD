@@ -49,15 +49,17 @@ public class ActivityItalian extends Activity implements OnClickListener{
 
     //ボタン処理
     public void onClick(View view) {
+        Intent intent;
         switch (view.getId()) {
+
             case R.id.imageButton:
-                Intent intent = new Intent(this, ActivityMenu.class);
+             intent = new Intent(this, ActivityMenu.class);
                 startActivity(intent);
                 break;
 
             case R.id.imageButton2:
                 //→ボタン
-                intent =new Intent(this,ActivityWine.class);
+                intent =new Intent(this,ActivityWeddeing.class);
                 startActivity(intent);
                 break;
 
@@ -68,5 +70,6 @@ public class ActivityItalian extends Activity implements OnClickListener{
                 break;
 
         }
+        finish();
     }
 }

@@ -45,20 +45,19 @@ public class ActivityChapel extends Activity implements OnClickListener{
 
 //ボタン処理
     public void onClick(View view) {
-        Intent intent;
+       Intent intent;
         switch (view.getId()) {
             case R.id.imageButton:
-                 intent = new Intent(this, ActivityMenu.class);
+                intent = new Intent(this, ActivityMenu.class);
                 startActivity(intent);
-                finish();
                 break;
 
             case R.id.imageButton2:
                 intent =new Intent(this,ActivityGarden.class);
                 startActivity(intent);
-                finish();
+
               break;
         }
-
+      finish();
     }
 }

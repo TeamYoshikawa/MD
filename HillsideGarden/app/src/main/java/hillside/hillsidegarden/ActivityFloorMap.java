@@ -68,5 +68,6 @@ public class ActivityFloorMap extends Activity implements OnClickListener{
                 break;
 
         }
+        finish();
     }
 }

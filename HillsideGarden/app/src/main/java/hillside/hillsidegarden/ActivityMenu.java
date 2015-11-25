@@ -20,6 +20,7 @@ public class ActivityMenu extends Activity implements OnClickListener {
     private ImageButton imageButton7;
     private ImageButton imageButton8;
     private ImageButton imageButton9;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,10 +67,11 @@ public class ActivityMenu extends Activity implements OnClickListener {
 
     //ボタンの処理
     public void onClick(View view){
+        Intent intent;
         switch (view.getId()) {
             //イタリアンのページに飛ぶボタン
             case R.id.imageButton:
-                Intent intent = new Intent(this, ActivityItalian.class);
+                intent = new Intent(this, ActivityItalian.class);
                 startActivity(intent);
                 break;
 
@@ -78,7 +80,6 @@ public class ActivityMenu extends Activity implements OnClickListener {
                 intent = new Intent(this, ActivityWeddeing.class);
                 startActivity(intent);
                 break;
-
 
             case R.id.imageButton3:
                 //試着大剣に飛ぶボタン
@@ -108,14 +109,12 @@ public class ActivityMenu extends Activity implements OnClickListener {
                 //ガーデンのページに飛ぶボタン
                 intent = new Intent(this, ActivityGarden.class);
                 startActivity(intent);
-
                 break;
 
             case R.id.imageButton8:
                 //アクセスのページに飛ぶボタン
                 intent = new Intent (this,ActivityAccess.class);
                 startActivity(intent);
-
                 break;
 
             case R.id.imageButton9:

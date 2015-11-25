@@ -25,6 +25,12 @@
         android:layout_height="match_parent"
         tools:context=".ActivityChapel">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pages005"
+            />
+
         <ImageButton
             android:onClick="onClick"
             android:id="@+id/imageButton"
@@ -46,11 +52,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pages005"
-            />
+
 
     </RelativeLayout>
 
