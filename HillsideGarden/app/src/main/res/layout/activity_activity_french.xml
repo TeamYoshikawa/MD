@@ -61,11 +61,16 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/pages011"
+            android:src="@drawable/menu_frenchimage"
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/imageButton"
             android:layout_alignEnd="@+id/imageButton" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_sentence02"
+            />
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
