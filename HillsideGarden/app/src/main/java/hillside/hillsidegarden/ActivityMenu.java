@@ -82,8 +82,8 @@ public class ActivityMenu extends Activity implements OnClickListener {
                 break;
 
             case R.id.imageButton3:
-                //試着大剣に飛ぶボタン
-                intent = new Intent(this, ActivityTitle.class);
+                //試着体験に飛ぶボタン
+                intent = new Intent(this, ActivityExperience.class);
                 startActivity(intent);
             break;
 
