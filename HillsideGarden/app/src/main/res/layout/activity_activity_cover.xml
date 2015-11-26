@@ -33,6 +33,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
+
+               <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sentence_main"
+            android:layout_below="@+id/Text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
         <ImageButton
             android:id="@+id/button"
             android:onClick="onClick"
