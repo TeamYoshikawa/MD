@@ -12,4 +12,6 @@
     tools:context="hillside.hillsidegarden.ActivityCover"
     tools:showIn="@layout/activity_activity_cover">
 
+
+
 </RelativeLayout>
