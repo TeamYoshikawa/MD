@@ -71,45 +71,45 @@ public class Menu_Activity extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()) {
-            //イタリアンのページに飛ぶボタン
+            //チャペルのページに飛ぶボタン
             case R.id.imageButton:
-                intent = new Intent(this, hillside.hillsidegarden02.Italian_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Chapel.Chapel_Activity.class);
                 startActivity(intent);
                 break;
 
             case R.id.imageButton2:
-                //オリジナルウェディングのページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Weddeing_Activity.class);
+                //フレンチのページに飛ぶボタン
+                intent = new Intent(this, hillside.hillsidegarden02.French.French_Activity.class);
                 startActivity(intent);
                 break;
 
             case R.id.imageButton3:
-                //試着体験に飛ぶボタン
-                intent = new Intent(this, Experience_Activity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton4:
-                //チャペルのページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Chapel_Activity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton5:
-                //フレンチのページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.French_Activity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton6:
-                //ワイン庫のページに飛ぶボタン
+                //ワインに飛ぶボタン
                 intent = new Intent(this, hillside.hillsidegarden02.Wine_Activity.class);
                 startActivity(intent);
                 break;
 
-            case R.id.imageButton7:
+            case R.id.imageButton4:
                 //ガーデンのページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Garden_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Garden.Garden_Activity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.imageButton5:
+                //イタリアンのページに飛ぶボタン
+                intent = new Intent(this, hillside.hillsidegarden02.Italian.Italian_Activity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.imageButton6:
+                //オリジナルのページに飛ぶボタン
+                intent = new Intent(this, hillside.hillsidegarden02.Weddeing_Activity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.imageButton7:
+                //試着体験のページに飛ぶボタン
+                intent = new Intent(this, hillside.hillsidegarden02.Garden.Garden_Activity.class);
                 startActivity(intent);
                 break;
 

@@ -139,11 +139,9 @@
             android:background="@null"
             android:onClick="onClick8"
             android:src="@drawable/btn_access"
-            android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_alignBottom="@+id/imageButton9"
-            android:layout_toRightOf="@+id/imageButton7"
-            android:layout_toEndOf="@+id/imageButton7" />
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageButton9"
+            android:layout_toStartOf="@+id/imageButton9" />
 
         <ImageButton
             android:id="@+id/imageButton9"
@@ -153,9 +151,8 @@
             android:onClick="onClick9"
             android:src="@drawable/btn_map"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/imageButton8"
-            android:layout_toEndOf="@+id/imageButton8"
-            android:layout_marginBottom="20dp" />
+            android:layout_toLeftOf="@+id/imageButton6"
+            android:layout_toStartOf="@+id/imageButton6" />
 
 
 

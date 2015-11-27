@@ -27,115 +27,115 @@
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Chapel_Activity"
+            android:name=".Chapel.Chapel_Activity"
             android:label="@string/title_activity_chapel_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Chapel_Activity02"
+            android:name=".Chapel.Chapel_Activity02"
             android:label="@string/title_activity_chapel_02"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Chapel_Activity03"
+            android:name=".Chapel.Chapel_Activity03"
             android:label="@string/title_activity_chapel_03"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Chapel_Activity04"
+            android:name=".Chapel.Chapel_Activity04"
             android:label="@string/title_activity_chapel_04"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Garden_Activity"
+            android:name=".Garden.Garden_Activity"
             android:label="@string/title_activity_garden_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Garden_Activity02"
+            android:name=".Garden.Garden_Activity02"
             android:label="@string/title_activity_garden_02"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Chapel_Activity01"
+            android:name=".Chapel.Chapel_Activity01"
             android:label="@string/title_activity_chapel_01"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Garden_Activity01"
+            android:name=".Garden.Garden_Activity01"
             android:label="@string/title_activity_garden_01"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".French_Activity"
+            android:name=".French.French_Activity"
             android:label="@string/title_activity_french_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".French_Activity01"
+            android:name=".French.French_Activity01"
             android:label="@string/title_activity_french_01"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".French_Activity02"
+            android:name=".French.French_Activity02"
             android:label="@string/title_activity_french_02"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".French_Activity03"
+            android:name=".French.French_Activity03"
             android:label="@string/title_activity_french_03"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Italian_Activity"
+            android:name=".Italian.Italian_Activity"
             android:label="@string/title_activity_itarian_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Italian_Activity01"
+            android:name=".Italian.Italian_Activity01"
             android:label="@string/title_activity_italian_01"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Italian_Activity02"
+            android:name=".Italian.Italian_Activity02"
             android:label="@string/title_activity_italian_02"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Italian_Activity03"
+            android:name=".Italian.Italian_Activity03"
             android:label="@string/title_activity_italian_03"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Weddeing_Activity"
+            android:name=".Weddeing.Weddeing_Activity"
             android:label="@string/title_activity_weddeing_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Weddeing_Activity01"
+            android:name=".Weddeing.Weddeing_Activity01"
             android:label="@string/title_activity_weddeing_01"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Weddeing_Activity02"
+            android:name=".Weddeing.Weddeing_Activity02"
             android:label="@string/title_activity_weddeing_02"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
