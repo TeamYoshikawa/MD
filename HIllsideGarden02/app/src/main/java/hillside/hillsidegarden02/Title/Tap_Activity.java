@@ -5,18 +5,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
+import android.widget.ImageButton;
+import android.view.View.OnClickListener;
 
 import hillside.hillsidegarden02.R;
 
 
-public class Tap_Activity extends Activity {
-
+public class Tap_Activity extends Activity implements OnClickListener {
+private ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tap);
+        imageButton=(ImageButton)findViewById(R.id.imageButton);
+        imageButton.setOnClickListener(this);
     }
 
     @Override

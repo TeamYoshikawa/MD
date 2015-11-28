@@ -4,39 +4,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="hillside.hillsidegarden02.Tap_Activity">
+    tools:context="hillside.HillsideGarden.Activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
+
+
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_tap" />
+    <include layout="@layout/content_title" />
+
+
+
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Tap_Activity">
+        tools:context=".ActivityMenu">
+
+        <ImageView
+            android:id="@+id/start_image01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+
+            android:src="@drawable/start_image01"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
 
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:src="@drawable/sab_btn"
             android:background="@null"
-            android:layout_marginBottom="130dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="225dp"
-            android:layout_marginEnd="225dp" />
+            android:onClick="onClick"
+            android:src="@drawable/btn_gmap"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="175dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="108dp" />
+
+
+
+
 
 
     </RelativeLayout>
+
+
+
 
 
 </android.support.design.widget.CoordinatorLayout>

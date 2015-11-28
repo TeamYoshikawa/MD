@@ -6,19 +6,28 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-
+import android.widget.ImageButton;
 
 
 import hillside.hillsidegarden02.R;
 
 
 public class Chapel_Activity01 extends Activity implements OnClickListener {
-
+    private ImageButton imageButton;
+    private ImageButton imageButton2;
+    private ImageButton imageButton3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapel_01);
+        imageButton=(ImageButton)findViewById(R.id.imageButton);
+        imageButton2=(ImageButton)findViewById(R.id.imageButton2);
+        imageButton3=(ImageButton)findViewById(R.id.imageButton3);
+
+        imageButton.setOnClickListener(this);
+        imageButton2.setOnClickListener(this);
+        imageButton3.setOnClickListener(this);
     }
 
     @Override
@@ -43,12 +52,22 @@ public class Chapel_Activity01 extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-            //タップしてね！！
+            //→
             case R.id.imageButton:
                 intent = new Intent(this,Chapel_Activity02.class);
                 startActivity(intent);
-                finish();
+                break;
+            //メニュー
+            case R.id.imageButton2:
+                intent = new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
+                startActivity(intent);
+                break;
+            //←
+            case R.id.imageButton3:
+                intent = new Intent(this,Chapel_Activity.class);
+                startActivity(intent);
                 break;
         }
+        finish();
     }
 }

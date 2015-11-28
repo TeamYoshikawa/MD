@@ -141,37 +141,37 @@
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Wine_Activity"
+            android:name=".Wine.Wine_Activity"
             android:label="@string/title_activity_wine_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Wine_Activity01"
+            android:name=".Wine.Wine_Activity01"
             android:label="@string/title_activity_wine_01"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Wine_Activity02"
+            android:name=".Wine.Wine_Activity02"
             android:label="@string/title_activity_wine_02"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Staff_Activity"
+            android:name=".Staff.Staff_Activity"
             android:label="@string/title_activity_staff_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Staff_Activity01"
+            android:name=".Staff.Staff_Activity01"
             android:label="@string/title_activity_staff_01"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Staff_Activity02"
+            android:name=".Staff.Staff_Activity02"
             android:label="@string/title_activity_staff_02"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>

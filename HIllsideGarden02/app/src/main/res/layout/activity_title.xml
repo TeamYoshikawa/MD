@@ -4,36 +4,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="hillside.hillsidegarden02.Title_Activity">
+    tools:context="hillside.HillsideGarden.Activity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
+
+
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_title" />
+
+
+
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Title_Activity">
+        tools:context=".ActivityMenu">
 
+        <ImageView
+            android:id="@+id/start_image01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+
+            android:src="@drawable/start_image01"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
 
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
             android:onClick="onClick"
-            android:src="@drawable/btn_right" />
+            android:src="@drawable/btn_gmap"
+             />
+
+
+
+
 
 
     </RelativeLayout>
+
+
+
 
 
 </android.support.design.widget.CoordinatorLayout>

@@ -85,7 +85,7 @@ public class Menu_Activity extends Activity implements OnClickListener {
 
             case R.id.imageButton3:
                 //ワインに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Wine_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Wine.Wine_Activity.class);
                 startActivity(intent);
                 break;
 
@@ -103,7 +103,7 @@ public class Menu_Activity extends Activity implements OnClickListener {
 
             case R.id.imageButton6:
                 //オリジナルのページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Weddeing_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Weddeing.Weddeing_Activity.class);
                 startActivity(intent);
                 break;
 

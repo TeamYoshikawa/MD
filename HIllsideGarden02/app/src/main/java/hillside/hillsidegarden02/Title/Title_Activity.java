@@ -6,18 +6,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 
 import hillside.hillsidegarden02.R; //フォルダ分けしてるためR.javaのリソースをインポートする必要がある
 
 
 
-public class Title_Activity extends Activity {
+public class Title_Activity extends Activity implements OnClickListener {
 
+private ImageButton imageButton;
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title);
+        imageButton=(ImageButton)findViewById(R.id.imageButton);
+
+        imageButton.setOnClickListener(this);
     }
 
     @Override

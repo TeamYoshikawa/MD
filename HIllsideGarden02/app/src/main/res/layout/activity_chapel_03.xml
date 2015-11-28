@@ -21,17 +21,52 @@
         tools:context=".Chapel_Activity02">
 
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/chapel_image05"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:src="@drawable/chapel_sentence02"
+            android:layout_marginLeft="272dp"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="179dp"
+            android:layout_below="@+id/imageButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:src="@drawable/sab_btn"
+            android:src="@drawable/btn_top"
             android:background="@null"
-            android:layout_marginRight="52dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginTop="100dp"
             android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_left"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_right"
+            android:background="@null"
+            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>
