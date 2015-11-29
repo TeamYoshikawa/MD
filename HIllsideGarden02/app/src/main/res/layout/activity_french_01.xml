@@ -14,27 +14,73 @@
 
     <include layout="@layout/content_french_01" />
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".French_Activity01">
 
+        <ImageView
+            android:src="@drawable/flench_image01"
+            android:layout_width="591dp"
+            android:layout_height="359dp"
+            android:layout_x="2dp"
+            android:layout_y="0dp" />
+          <ImageView
+              android:src="@drawable/flench_sentence01"
+              android:layout_width="434dp"
+              android:layout_height="214dp"
+              android:layout_x="-6dp"
+              android:layout_y="-36dp" />
+
+        <ImageView
+            android:src="@drawable/flench_sentence02"
+            android:layout_width="224dp"
+            android:layout_height="109dp"
+            android:layout_x="371dp"
+            android:layout_y="255dp" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:src="@drawable/sab_btn"
+            android:src="@drawable/btn_top"
             android:background="@null"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginLeft="36dp"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="58dp" />
-    </RelativeLayout>
+            android:layout_marginTop="58dp"
+            android:layout_x="500dp"
+            android:layout_y="0dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:src="@drawable/btn_left"
+            android:onClick="onClick"
+            android:background="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_x="0dp"
+            android:layout_y="150dp"
+
+            />
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:src="@drawable/btn_right"
+            android:onClick="onClick"
+            android:background="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_x="541dp"
+            android:layout_y="150dp"
+
+            />
+
+
+    </AbsoluteLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>

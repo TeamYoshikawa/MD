@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="hillside.hillsidegarden02.Chapel_Activity02">
+    tools:context="hillside.hillsidegarden02.Chapel_Activity04">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -12,38 +12,44 @@
         android:theme="@style/AppTheme.AppBarOverlay">
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_chapel_02" />
+    <include layout="@layout/content_chapel_04" />
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Chapel_Activity02">
+        tools:context=".Chapel_Activity04">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="214dp"
+            android:layout_height="162dp"
             android:src="@drawable/chapel_image07"
             android:id="@+id/imageView6"
             android:layout_alignBottom="@+id/imageButton3"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_x="61dp"
+            android:layout_y="6dp" />
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="229dp"
+            android:layout_height="171dp"
             android:src="@drawable/chapel_image06"
             android:layout_below="@+id/imageView6"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_x="55dp"
+            android:layout_y="175dp" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="270dp"
+            android:layout_height="202dp"
             android:src="@drawable/chapel_sentence03"
             android:id="@+id/imageView7"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true" />
+            android:layout_alignParentBottom="true"
+            android:layout_x="292dp"
+            android:layout_y="100dp" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -54,7 +60,9 @@
             android:background="@null"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_x="502dp"
+            android:layout_y="0dp" />
         <ImageButton
             android:onClick="onClick"
             android:id="@+id/imageButton3"
@@ -64,7 +72,9 @@
             android:background="@null"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_x="0dp"
+            android:layout_y="157dp" />
         <ImageButton
             android:onClick="onClick"
             android:id="@+id/imageButton2"
@@ -74,8 +84,10 @@
             android:background="@null"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+            android:layout_alignParentEnd="true"
+            android:layout_x="541dp"
+            android:layout_y="148dp" />
+    </AbsoluteLayout>
 
 
 
