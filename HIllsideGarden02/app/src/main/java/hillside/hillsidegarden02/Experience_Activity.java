@@ -50,17 +50,17 @@ public class Experience_Activity extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-            //タップしてね！！
+            //TOP
             case R.id.imageButton:
                 intent = new Intent(this, hillside.hillsidegarden02.Weddeing.Weddeing_Activity01.class);
                 startActivity(intent);
                 break;
-
+//Shot
             case R.id.imageButton2:
                 intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);
                 break;
-
+//album
             case R.id.imageButton3:
                 intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);

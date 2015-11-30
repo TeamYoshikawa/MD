@@ -28,10 +28,10 @@
 
         <ImageView
             android:src="@drawable/wedding_image02"
-            android:layout_width="1062dp"
-            android:layout_height="358dp"
-            android:layout_x="-106dp"
-            android:layout_y="0dp" />
+            android:layout_width="936dp"
+            android:layout_height="315dp"
+            android:layout_x="-34dp"
+            android:layout_y="36dp" />
 
         <ImageButton
             android:id="@+id/imageButton"

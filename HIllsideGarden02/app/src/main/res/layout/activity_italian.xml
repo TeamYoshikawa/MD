@@ -21,6 +21,7 @@
         tools:context=".Italian_Activity">
 
         <ImageView
+            android:id="@id/imageView"
             android:src="@drawable/menu_image05"
             android:layout_width="257dp"
             android:layout_height="192dp"
@@ -33,6 +34,7 @@
             android:layout_y="79dp" />
 
         <ImageView
+            android:id="@+id/imageView2"
             android:src="@drawable/italian_sentence01"
             android:layout_width="303dp"
             android:layout_height="102dp"
@@ -61,8 +63,8 @@
             android:layout_height="35dp"
             android:src="@drawable/btn_x"
             android:background="@null"
-            android:layout_x="539dp"
-            android:layout_y="111dp" />
+            android:layout_x="547dp"
+            android:layout_y="102dp" />
     </AbsoluteLayout>
 
 

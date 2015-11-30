@@ -32,12 +32,7 @@
             android:layout_x="2dp"
             android:layout_y="79dp" />
 
-        <ImageView
-            android:src="@drawable/wine_sentence02"
-            android:layout_width="840dp"
-            android:layout_height="282dp"
-            android:layout_x="9dp"
-            android:layout_y="26dp" />
+
 
         <ImageButton
             android:id="@+id/imageButton"

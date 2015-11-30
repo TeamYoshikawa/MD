@@ -19,32 +19,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Wine_Activity02">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="未実装"
+    android:layout_x="260dp"
+    android:layout_y="171dp" />
 
-        <ImageView
-            android:src="@drawable/wine_sentence02"
-            android:layout_width="461dp"
-            android:layout_height="279dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="31dp"
-            android:layout_x="-56dp"
-            android:layout_y="51dp" />
-
-        <ImageView
-            android:src="@drawable/wine_image04"
-            android:layout_width="221dp"
-            android:layout_height="140dp"
-            android:layout_x="326dp"
-            android:layout_y="45dp" />
-
-
-        <ImageView
-            android:src="@drawable/wine_image05"
-            android:layout_width="217dp"
-            android:layout_height="137dp"
-            android:layout_x="328dp"
-            android:layout_y="203dp" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -58,6 +39,7 @@
             android:layout_alignParentStart="true"
             android:layout_x="1dp"
             android:layout_y="158dp" />
+
         <ImageButton
             android:background="@null"
             android:id="@+id/imageButton2"

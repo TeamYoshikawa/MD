@@ -11,6 +11,8 @@ import android.widget.ImageButton;
 import hillside.hillsidegarden02.R;
 
 
+//白くぼやけるページ
+
 public class Chapel_Activity extends Activity implements OnClickListener {
     private ImageButton imageButton;
     private ImageButton imageButton2;
@@ -48,12 +50,13 @@ public class Chapel_Activity extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-            //タップしてね！！
+            //ページへ
             case R.id.imageButton:
                 intent = new Intent(this, hillside.hillsidegarden02.Chapel.Chapel_Activity01.class);
                 startActivity(intent);
-
                 break;
+
+           //×
 
             case R.id.imageButton2:
                 intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);

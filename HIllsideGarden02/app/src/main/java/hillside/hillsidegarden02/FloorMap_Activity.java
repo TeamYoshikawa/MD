@@ -21,7 +21,7 @@ public class FloorMap_Activity extends Activity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_french_01);
+        setContentView(R.layout.activity_floor_map);
         imageButton=(ImageButton)findViewById(R.id.imageButton);
         imageButton2=(ImageButton)findViewById(R.id.imageButton2);
         imageButton3=(ImageButton)findViewById(R.id.imageButton3);
@@ -37,7 +37,7 @@ public class FloorMap_Activity extends Activity implements OnClickListener {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // メニューに項目がある場合に項目を追加する
-        getMenuInflater().inflate(R.menu.menu_french01, menu);
+        getMenuInflater().inflate(R.menu.menu_floormap, menu);
         return true;
     }
 
@@ -58,7 +58,7 @@ public class FloorMap_Activity extends Activity implements OnClickListener {
         switch (view.getId()){
             //タップしてね！！
             case R.id.imageButton:
-                intent = new Intent(this, hillside.hillsidegarden02.French.French_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Access.Access_Activity.class);
                 startActivity(intent);
                 break;
 
@@ -68,7 +68,7 @@ public class FloorMap_Activity extends Activity implements OnClickListener {
                 break;
 
             case R.id.imageButton3:
-                intent=new Intent(this,hillside.hillsidegarden02.French.French_Activity02.class);
+                intent=new Intent(this,hillside.hillsidegarden02.Staff.Staff_Activity02.class);
                 startActivity(intent);
                 break;
         }

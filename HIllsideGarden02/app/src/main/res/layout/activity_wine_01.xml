@@ -36,8 +36,8 @@
             android:src="@drawable/wine_image01"
             android:layout_width="800dp"
             android:layout_height="393dp"
-            android:layout_x="-103dp"
-            android:layout_y="-12dp" />
+            android:layout_x="-197dp"
+            android:layout_y="-37dp" />
 
         <ImageButton
             android:id="@+id/imageButton"
