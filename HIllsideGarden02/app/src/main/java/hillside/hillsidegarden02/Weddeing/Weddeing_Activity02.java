@@ -70,7 +70,7 @@ public class Weddeing_Activity02 extends Activity implements OnClickListener {
 
             //仕様書にはあるけどどこに飛ばすの？
             case R.id.imageButton3:
-                intent=new Intent(this,hillside.hillsidegarden02.Wine.Wine_Activity01.class);
+                intent=new Intent(this,hillside.hillsidegarden02.Wine.Wine_Activity.class);
                 startActivity(intent);
                 break;
         }

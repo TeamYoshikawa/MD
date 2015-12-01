@@ -43,13 +43,9 @@
             android:layout_height="wrap_content"
             android:background="@null"
             android:onClick="onClick"
-            android:src="@drawable/btn_gmap"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="175dp"
-            android:layout_marginStart="175dp"
-            android:layout_marginTop="108dp" />
+            android:src="@drawable/sab_btn"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
 
 
 

@@ -52,7 +52,7 @@ public class Experience_Activity extends Activity implements OnClickListener {
         switch (view.getId()){
             //TOP
             case R.id.imageButton:
-                intent = new Intent(this, hillside.hillsidegarden02.Weddeing.Weddeing_Activity01.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);
                 break;
 //Shot

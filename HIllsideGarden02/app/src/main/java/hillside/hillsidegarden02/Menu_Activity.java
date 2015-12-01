@@ -109,7 +109,7 @@ public class Menu_Activity extends Activity implements OnClickListener {
 
             case R.id.imageButton7:
                 //試着体験のページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Garden.Garden_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Experience_Activity.class);
                 startActivity(intent);
                 break;
 

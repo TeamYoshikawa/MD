@@ -58,17 +58,17 @@ public class FloorMap_Activity extends Activity implements OnClickListener {
         switch (view.getId()){
             //タップしてね！！
             case R.id.imageButton:
-                intent = new Intent(this, hillside.hillsidegarden02.Access.Access_Activity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton2:
                 intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);
                 break;
 
+            case R.id.imageButton2:
+                intent = new Intent(this, hillside.hillsidegarden02.Access.Access_Activity.class);
+                startActivity(intent);
+                break;
+
             case R.id.imageButton3:
-                intent=new Intent(this,hillside.hillsidegarden02.Staff.Staff_Activity02.class);
+                intent=new Intent(this,hillside.hillsidegarden02.Access.Access_Activity.class);
                 startActivity(intent);
                 break;
         }
