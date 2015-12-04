@@ -39,12 +39,12 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@null"
             android:onClick="onClick"
             android:src="@drawable/sab_btn"
-            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
 
