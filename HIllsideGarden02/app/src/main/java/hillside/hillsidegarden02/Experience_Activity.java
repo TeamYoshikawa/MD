@@ -1,4 +1,5 @@
 package hillside.hillsidegarden02;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,22 +7,23 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageButton;
-
-
 
 
 public class Experience_Activity extends Activity implements OnClickListener {
     private ImageButton imageButton;
     private ImageButton imageButton2;
     private ImageButton imageButton3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_experience);
-        imageButton=(ImageButton)findViewById(R.id.imageButton);
-        imageButton2=(ImageButton)findViewById(R.id.imageButton2);
-        imageButton3=(ImageButton)findViewById(R.id.imageButton3);
+        imageButton = (ImageButton) findViewById(R.id.imageButton);
+        imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
+        imageButton3 = (ImageButton) findViewById(R.id.imageButton3);
 
         imageButton.setOnClickListener(this);
         imageButton2.setOnClickListener(this);
@@ -47,9 +49,9 @@ public class Experience_Activity extends Activity implements OnClickListener {
 
 
     //ボタンの処理
-    public void onClick(View view){
+    public void onClick(View view) {
         Intent intent;
-        switch (view.getId()){
+        switch (view.getId()) {
             //TOP
             case R.id.imageButton:
                 intent = new Intent(this, hillside.hillsidegarden02.Menu_Activity.class);
@@ -57,12 +59,13 @@ public class Experience_Activity extends Activity implements OnClickListener {
                 break;
 //Shot
             case R.id.imageButton2:
-                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
+
+                intent = new Intent(this, hillside.hillsidegarden02.CameraEx.class);
                 startActivity(intent);
                 break;
 //album
             case R.id.imageButton3:
-                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Album_Activity.class);
                 startActivity(intent);
                 break;
         }
