@@ -39,17 +39,13 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@null"
             android:onClick="onClick"
-            android:src="@drawable/btn_gmap"
+            android:src="@drawable/sab_btn"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="175dp"
-            android:layout_marginStart="175dp"
-            android:layout_marginTop="108dp" />
+            android:layout_centerHorizontal="true" />
 
 
 

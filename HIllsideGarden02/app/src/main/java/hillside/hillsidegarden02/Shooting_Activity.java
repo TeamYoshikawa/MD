@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+/*実際に写真を撮るときに使うアクティビティ？*/
+
 public class Shooting_Activity extends AppCompatActivity {
 
     @Override

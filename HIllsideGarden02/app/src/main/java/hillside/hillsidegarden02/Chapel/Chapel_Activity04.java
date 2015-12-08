@@ -9,6 +9,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 
 
+import hillside.hillsidegarden02.French.French_Activity;
 import hillside.hillsidegarden02.R;
 
 
@@ -20,7 +21,7 @@ public class Chapel_Activity04 extends Activity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chapel_02);
+        setContentView(R.layout.activity_chapel_04);
         imageButton=(ImageButton)findViewById(R.id.imageButton);
         imageButton2=(ImageButton)findViewById(R.id.imageButton2);
         imageButton3=(ImageButton)findViewById(R.id.imageButton3);
@@ -33,7 +34,7 @@ public class Chapel_Activity04 extends Activity implements OnClickListener {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // メニューに項目がある場合に項目を追加する
-        getMenuInflater().inflate(R.menu.menu_chapel02, menu);
+        getMenuInflater().inflate(R.menu.menu_chapel04, menu);
         return true;
     }
 
@@ -54,7 +55,7 @@ public class Chapel_Activity04 extends Activity implements OnClickListener {
         switch (view.getId()){
             //→
             case R.id.imageButton:
-                intent = new Intent(this,Chapel_Activity03.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Garden.Garden_Activity.class);
                 startActivity(intent);
                 break;
             //メニュー

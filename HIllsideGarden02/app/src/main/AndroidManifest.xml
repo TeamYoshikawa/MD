@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="hillside.hillsidegarden02" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon_58"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -121,12 +125,12 @@
             android:label="@string/title_activity_italian_03"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity
+        <activityw
             android:screenOrientation="landscape"
             android:name=".Weddeing.Weddeing_Activity"
             android:label="@string/title_activity_weddeing_"
             android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+        </activityw>
         <activity
             android:screenOrientation="landscape"
             android:name=".Weddeing.Weddeing_Activity01"
@@ -171,19 +175,13 @@
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Staff.Staff_Activity02"
-            android:label="@string/title_activity_staff_02"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
-            android:screenOrientation="landscape"
             android:name=".FloorMap_Activity"
             android:label="@string/title_activity_floor_map_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".HomePage_Activity"
+            android:name=".Access.HomePage_Activity"
             android:label="@string/title_activity_home_page_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
@@ -195,7 +193,7 @@
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Access_Activity"
+            android:name=".Access.Access_Activity"
             android:label="@string/title_activity_access_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>

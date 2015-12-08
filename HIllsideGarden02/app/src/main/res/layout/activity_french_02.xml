@@ -20,20 +20,85 @@
         android:layout_height="match_parent"
         tools:context=".French_Activity02">
 
+<ImageView
+    android:src="@drawable/flench_image02"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_above="@+id/imageButton4" />
+
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:src="@drawable/sab_btn"
+            android:src="@drawable/btn_left"
             android:background="@null"
-            android:layout_marginLeft="102dp"
-            android:layout_marginStart="102dp"
-            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="54dp" />
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/btn_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/flench_image03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageButton5"
+            android:layout_toEndOf="@+id/imageButton5"
+            android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp" />
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imageButton5"
+            android:src="@drawable/flench_image04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageButton7"
+            android:layout_toEndOf="@+id/imageButton7"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp" />
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imageButton6"
+            android:src="@drawable/flench_image05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageButton4"
+            android:layout_toEndOf="@+id/imageButton4"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp" />
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imageButton7"
+            android:src="@drawable/flench_image06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageButton"
+            android:layout_toEndOf="@+id/imageButton" />
     </RelativeLayout>
 
 

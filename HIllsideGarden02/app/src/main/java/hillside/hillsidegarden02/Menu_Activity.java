@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.ImageButton;
 import android.view.View.OnClickListener;
 
@@ -27,7 +29,7 @@ public class Menu_Activity extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
+/*アクティビティ起動時にボタンを作成*/
         imageButton=(ImageButton)findViewById(R.id.imageButton);
         imageButton2=(ImageButton)findViewById(R.id.imageButton2);
         imageButton3=(ImageButton)findViewById(R.id.imageButton3);
@@ -47,6 +49,35 @@ public class Menu_Activity extends Activity implements OnClickListener {
         imageButton7.setOnClickListener(this);
         imageButton8.setOnClickListener(this);
         imageButton9.setOnClickListener(this);
+
+ /*アクティビティ起動と同時にアニメーションを起動*/
+        /*アニメーション対象ボタンの取得*/
+        ImageButton transanimation  =(ImageButton)findViewById(R.id.imageButton);   //translateさせるもの
+        ImageButton transanimation2 =(ImageButton)findViewById(R.id.imageButton2); //translateさせるもの
+        ImageButton transanimation3 =(ImageButton)findViewById(R.id.imageButton3); //translateさせるもの
+        ImageButton transanimation4 =(ImageButton)findViewById(R.id.imageButton4); //translateさせるもの
+        ImageButton transanimation5 =(ImageButton)findViewById(R.id.imageButton5); //translateさせるもの
+        ImageButton transanimation6 =(ImageButton)findViewById(R.id.imageButton6); //translateさせるもの
+        ImageButton transanimation7 =(ImageButton)findViewById(R.id.imageButton7); //translateさせるもの
+
+
+        /*アニメーションの準備(translateAnimation)*/
+        TranslateAnimation trans_icon =new TranslateAnimation(0,0,-10,10);
+       /*アニメーション起動*/
+        /*無限に繰り返す*/
+        trans_icon.setRepeatCount(Animation.INFINITE);
+        /*繰り返し方の指定*/
+        trans_icon.setRepeatMode(Animation.REVERSE);
+        /* 一回ごとの実行時間間隔　1/1000 */
+        trans_icon.setDuration(1000);
+        /*実行*/
+        transanimation.startAnimation(trans_icon);
+        transanimation2.startAnimation(trans_icon);
+        transanimation3.startAnimation(trans_icon);
+        transanimation4.startAnimation(trans_icon);
+        transanimation5.startAnimation(trans_icon);
+        transanimation6.startAnimation(trans_icon);
+        transanimation7.startAnimation(trans_icon);
     }
 
     @Override
@@ -109,13 +140,13 @@ public class Menu_Activity extends Activity implements OnClickListener {
 
             case R.id.imageButton7:
                 //試着体験のページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Garden.Garden_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Experience_Activity.class);
                 startActivity(intent);
                 break;
 
             case R.id.imageButton8:
                 //アクセスのページに飛ぶボタン
-                intent = new Intent (this, hillside.hillsidegarden02.Access_Activity.class);
+                intent = new Intent (this, hillside.hillsidegarden02.Access.Access_Activity.class);
                 startActivity(intent);
                 break;
 
