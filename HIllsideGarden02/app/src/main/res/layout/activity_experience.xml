@@ -53,13 +53,13 @@
 
         <ImageButton
             android:id="@+id/imageButton2"
-            android:src="@drawable/btn_access"
+            android:src="@drawable/btn_shoot"
             android:onClick="onClick"
             android:background="@null"
             android:layout_width="79dp"
             android:layout_height="79dp"
-            android:layout_x="183dp"
-            android:layout_y="239dp"
+            android:layout_x="182dp"
+            android:layout_y="2dp"
 
             />
         <ImageButton

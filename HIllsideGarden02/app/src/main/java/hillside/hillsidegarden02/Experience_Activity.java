@@ -57,10 +57,10 @@ public class Experience_Activity extends Activity implements OnClickListener {
                 intent = new Intent(this, hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);
                 break;
-//Shot
+//Camera
             case R.id.imageButton2:
 
-                intent = new Intent(this, hillside.hillsidegarden02.CameraEx.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Camera_Menu_Activity.class);
                 startActivity(intent);
                 break;
 //album

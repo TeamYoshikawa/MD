@@ -38,4 +38,5 @@
     <string name="title_activity_dress_gallary">DressGallary</string>
     <string name="title_activity_back_ground_gallary">BackGroundGallary</string>
     <string name="title_activity_tap">TapActivity</string>
+    <string name="title_activity_camera__menu_">Camera_Menu_Activity</string>
 </resources>
