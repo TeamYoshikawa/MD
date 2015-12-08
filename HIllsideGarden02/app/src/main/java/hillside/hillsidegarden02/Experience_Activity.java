@@ -65,7 +65,7 @@ public class Experience_Activity extends Activity implements OnClickListener {
                 break;
 //album
             case R.id.imageButton3:
-                intent = new Intent(this, hillside.hillsidegarden02.Menu_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Album_Activity.class);
                 startActivity(intent);
                 break;
         }
