@@ -64,9 +64,9 @@ public class Italian_Activity02 extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-
+            //タップしてね！！
             case R.id.imageButton:
-                intent = new Intent(this, hillside.hillsidegarden02.Italian.Italian_Activity01.class);
+                intent = new Intent(this, hillside.hillsidegarden02.French.French_Activity.class);
                 startActivity(intent);
                 break;
             case R.id.imageButton2:
@@ -74,24 +74,24 @@ public class Italian_Activity02 extends Activity implements OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.imageButton3:
-                intent = new Intent(this, hillside.hillsidegarden02.Italian.Italian_Activity03.class);
+                intent = new Intent(this, hillside.hillsidegarden02.French.French_Activity03.class);
                 startActivity(intent);
                 break;
             case R.id.imageButton4:
-               // intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
-              //  startActivity(intent);
+                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
+                startActivity(intent);
                 break;
             case R.id.imageButton5:
-               // intent = new Intent(this, hillside.hillsidegarden02.Chapel.Chapel_Activity01.class);
-               // startActivity(intent);
+                intent = new Intent(this, hillside.hillsidegarden02.Chapel.Chapel_Activity01.class);
+                startActivity(intent);
                 break;
             case R.id.imageButton6:
-               // intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
-               // startActivity(intent);
+                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
+                startActivity(intent);
                 break;
             case R.id.imageButton7:
-               // intent = new Intent(this, hillside.hillsidegarden02.Chapel.Chapel_Activity01.class);
-               // startActivity(intent);
+                intent = new Intent(this, hillside.hillsidegarden02.Chapel.Chapel_Activity01.class);
+                startActivity(intent);
                 break;
         }
         finish();

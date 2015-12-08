@@ -58,19 +58,18 @@ public class Weddeing_Activity02 extends Activity implements OnClickListener {
         switch (view.getId()){
             //タップしてね！！
             case R.id.imageButton:
-                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
-
+                intent = new Intent(this, hillside.hillsidegarden02.Weddeing.Weddeing_Activity01.class);
                 startActivity(intent);
                 break;
 
             case R.id.imageButton2:
-                intent = new Intent(this, hillside.hillsidegarden02.Wine.Wine_Activity.class);
+                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);
                 break;
 
             //仕様書にはあるけどどこに飛ばすの？
             case R.id.imageButton3:
-                intent=new Intent(this,hillside.hillsidegarden02.Wine.Wine_Activity.class);
+                intent=new Intent(this,hillside.hillsidegarden02.French.French_Activity02.class);
                 startActivity(intent);
                 break;
         }

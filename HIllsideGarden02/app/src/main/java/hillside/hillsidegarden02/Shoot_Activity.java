@@ -1,71 +1,29 @@
 package hillside.hillsidegarden02;
-import android.app.Activity;
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ImageButton;
 
-/*撮影に使う用なので適当（保留）*/
+public class Shoot_Activity extends AppCompatActivity {
 
-
-public class Shoot_Activity extends Activity implements OnClickListener {
-    private ImageButton imageButton;
-    private ImageButton imageButton2;
-    private ImageButton imageButton3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shoot);
-        imageButton=(ImageButton)findViewById(R.id.imageButton);
-        imageButton2=(ImageButton)findViewById(R.id.imageButton2);
-        imageButton3=(ImageButton)findViewById(R.id.imageButton3);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        imageButton.setOnClickListener(this);
-        imageButton2.setOnClickListener(this);
-        imageButton3.setOnClickListener(this);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // メニューに項目がある場合に項目を追加する
-        getMenuInflater().inflate(R.menu.menu_shoot, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-
-    //ボタンの処理
-    public void onClick(View view){
-        Intent intent;
-        switch (view.getId()){
-            //TOP
-            case R.id.imageButton:
-                intent = new Intent(this, hillside.hillsidegarden02.Menu_Activity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton2:
-                intent=new Intent(this,hillside.hillsidegarden02.Shoot_Activity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton3:
-                intent=new Intent(this,hillside.hillsidegarden02.Album_Activity.class);
-                startActivity(intent);
-                break;
-        }
-        finish();
-    }
 }

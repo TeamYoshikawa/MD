@@ -56,18 +56,17 @@ public class French_Activity01 extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-            //Top
+            //タップしてね！！
             case R.id.imageButton:
-                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
-
-                startActivity(intent);
-                break;
-           //←
-            case R.id.imageButton2:
                 intent = new Intent(this, hillside.hillsidegarden02.French.French_Activity.class);
                 startActivity(intent);
                 break;
-            //→
+
+            case R.id.imageButton2:
+                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
+                startActivity(intent);
+                break;
+
             case R.id.imageButton3:
                 intent=new Intent(this,hillside.hillsidegarden02.French.French_Activity02.class);
                 startActivity(intent);

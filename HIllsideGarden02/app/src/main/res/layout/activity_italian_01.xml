@@ -12,74 +12,29 @@
         android:theme="@style/AppTheme.AppBarOverlay">
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_italian_01" />
+    <include layout="@layout/content_italian_" />
 
-    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Italian_Activity01">
+        tools:context=".Italian_Activity_01">
 
-        <ImageView
-            android:src="@drawable/italian_image01"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <ImageView
-            android:src="@drawable/italian_sentence01"
-            android:layout_width="374dp"
-            android:layout_height="126dp"
-            android:layout_x="0dp"
-            android:layout_y="0dp" />
-
-        <ImageView
-            android:src="@drawable/italian_sentence02"
-            android:layout_width="240dp"
-            android:layout_height="95dp"
-            android:layout_x="353dp"
-            android:layout_y="264dp" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:src="@drawable/btn_top"
+            android:src="@drawable/sab_btn"
             android:background="@null"
+            android:layout_marginTop="95dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginLeft="36dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="58dp"
-            android:layout_x="500dp"
-            android:layout_y="0dp" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:src="@drawable/btn_left"
-            android:onClick="onClick"
-            android:background="@null"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_x="0dp"
-            android:layout_y="150dp"
-
-            />
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:src="@drawable/btn_right"
-            android:onClick="onClick"
-            android:background="@null"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_x="541dp"
-            android:layout_y="150dp"
-
-            />
-
-
-    </AbsoluteLayout>
+            android:layout_marginLeft="91dp"
+            android:layout_marginStart="91dp" />
+    </RelativeLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>

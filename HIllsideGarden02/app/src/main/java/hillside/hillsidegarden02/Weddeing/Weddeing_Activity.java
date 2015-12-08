@@ -29,7 +29,7 @@ public class Weddeing_Activity extends Activity implements OnClickListener {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // メニューに項目がある場合に項目を追加する
-        getMenuInflater().inflate(R.menu.menu_weddeing, menu);
+        getMenuInflater().inflate(R.menu.menu_italian, menu);
         return true;
     }
 

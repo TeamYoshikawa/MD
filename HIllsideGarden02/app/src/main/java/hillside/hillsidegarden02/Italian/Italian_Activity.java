@@ -48,7 +48,7 @@ public class Italian_Activity extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-            //→
+            //タップしてね！！
             case R.id.imageButton:
                 intent = new Intent(this, hillside.hillsidegarden02.Italian.Italian_Activity01.class);
                 startActivity(intent);

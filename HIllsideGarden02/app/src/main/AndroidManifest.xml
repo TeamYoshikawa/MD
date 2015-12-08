@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon_58"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -195,7 +195,7 @@
         </activity>
         <activity
             android:screenOrientation="landscape"
-            android:name=".Access.Access_Activity"
+            android:name=".Access_Activity"
             android:label="@string/title_activity_access_"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>

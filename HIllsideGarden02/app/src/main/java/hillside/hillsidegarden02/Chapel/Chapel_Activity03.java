@@ -52,14 +52,14 @@ public class Chapel_Activity03 extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-             //メニュー
+            //→
             case R.id.imageButton:
-                intent = new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
+                intent = new Intent(this,Chapel_Activity04.class);
                 startActivity(intent);
                 break;
-             //→
+            //メニュー
             case R.id.imageButton2:
-                intent = new Intent(this,hillside.hillsidegarden02.Chapel.Chapel_Activity04.class);
+                intent = new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);
                 break;
             //←

@@ -1,81 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="hillside.hillsidegarden02.French_Activity01">
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="hillside.hillsidegarden02.HomePage_Activity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_french_01" />
+    <include layout="@layout/content_home_page_" />
 
-    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".French_Activity01">
-
-        <ImageView
-            android:src="@drawable/floamap_image01"
-            android:layout_width="511dp"
-            android:layout_height="309dp"
-            android:layout_x="36dp"
-            android:layout_y="42dp" />
-        <ImageView
-            android:src="@drawable/floamap_sentence01"
-            android:layout_width="247dp"
-            android:layout_height="121dp"
-            android:layout_x="-6dp"
-            android:layout_y="-36dp" />
-
-
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:src="@drawable/btn_top"
-            android:background="@null"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="36dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="58dp"
-            android:layout_x="500dp"
-            android:layout_y="0dp" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:src="@drawable/btn_left"
-            android:onClick="onClick"
-            android:background="@null"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_x="0dp"
-            android:layout_y="150dp"
-
-            />
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:src="@drawable/btn_right"
-            android:onClick="onClick"
-            android:background="@null"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_x="541dp"
-            android:layout_y="150dp"
-
-            />
-
-
-    </AbsoluteLayout>
-
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
 
 </android.support.design.widget.CoordinatorLayout>
