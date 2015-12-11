@@ -55,7 +55,7 @@ public class Staff_Activity extends Activity implements OnClickListener {
                 break;
 
             case R.id.imageButton2:
-                intent = new Intent(this,hillside.hillsidegarden02.Wine.Wine_Activity02.class);
+                intent = new Intent(this,hillside.hillsidegarden02.Wine.Wine_Activity01.class);
                 startActivity(intent);
                 break;
             case R.id.imageButton3:

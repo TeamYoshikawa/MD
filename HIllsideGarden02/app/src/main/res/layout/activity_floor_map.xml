@@ -14,7 +14,7 @@
 
     <include layout="@layout/content_floor_map_" />
 
-    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +25,9 @@
             android:layout_width="443dp"
             android:layout_height="269dp"
             android:layout_x="64dp"
-            android:layout_y="56dp" />
+            android:layout_y="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
         <ImageView
             android:src="@drawable/floamap_sentence01"
             android:layout_width="230dp"
@@ -41,14 +43,11 @@
             android:onClick="onClick"
             android:src="@drawable/btn_top"
             android:background="@null"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="36dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="58dp"
             android:layout_x="500dp"
-            android:layout_y="0dp" />
+            android:layout_y="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -60,7 +59,9 @@
             android:layout_x="0dp"
             android:layout_y="150dp"
 
-            />
+            android:layout_alignTop="@+id/imageButton3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
         <ImageButton
             android:id="@+id/imageButton3"
             android:src="@drawable/btn_right"
@@ -70,9 +71,11 @@
             android:layout_height="50dp"
             android:layout_x="541dp"
             android:layout_y="150dp"
-            />
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/imageButton"
+            android:layout_alignEnd="@+id/imageButton" />
 
-    </AbsoluteLayout>
+    </RelativeLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>

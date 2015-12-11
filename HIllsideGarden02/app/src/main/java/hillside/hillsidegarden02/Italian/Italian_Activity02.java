@@ -14,7 +14,6 @@ import hillside.hillsidegarden02.R;
 public class Italian_Activity02 extends Activity implements OnClickListener {
     private ImageButton imageButton;
     private ImageButton imageButton2;
-    //未設置のボタン
     private ImageButton imageButton3;
     private ImageButton imageButton4;
     private ImageButton imageButton5;
@@ -74,24 +73,24 @@ public class Italian_Activity02 extends Activity implements OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.imageButton3:
-                intent = new Intent(this, hillside.hillsidegarden02.Italian.Italian_Activity03.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Weddeing.Weddeing_Activity.class);
                 startActivity(intent);
                 break;
             case R.id.imageButton4:
-               // intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
-              //  startActivity(intent);
+               intent=new Intent(this,hillside.hillsidegarden02.Italian.Italian_Activity03.class);
+               startActivity(intent);
                 break;
             case R.id.imageButton5:
-               // intent = new Intent(this, hillside.hillsidegarden02.Chapel.Chapel_Activity01.class);
-               // startActivity(intent);
+                intent = new Intent(this, hillside.hillsidegarden02.Italian.Italian_Activity04.class);
+                startActivity(intent);
                 break;
             case R.id.imageButton6:
-               // intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
-               // startActivity(intent);
+                intent=new Intent(this,hillside.hillsidegarden02.Italian.Italian_Activity05.class);
+                startActivity(intent);
                 break;
             case R.id.imageButton7:
-               // intent = new Intent(this, hillside.hillsidegarden02.Chapel.Chapel_Activity01.class);
-               // startActivity(intent);
+                intent = new Intent(this, hillside.hillsidegarden02.Italian.Italian_Activity06.class);
+                startActivity(intent);
                 break;
         }
         finish();

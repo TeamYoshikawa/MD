@@ -14,14 +14,14 @@
 
     <include layout="@layout/content_weddeing_" />
 
-    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Weddeing_Activity">
 
         <ImageView
-            android:src="@drawable/menu_image07"
+            android:src="@drawable/menu_image0005"
             android:layout_width="257dp"
             android:layout_height="192dp"
             android:layout_centerVertical="true"
@@ -30,40 +30,48 @@
             android:layout_marginLeft="22dp"
             android:layout_marginStart="22dp"
             android:layout_x="2dp"
-            android:layout_y="79dp" />
+            android:layout_y="79dp"
+            android:id="@+id/imageView33" />
 
         <ImageView
-            android:src="@drawable/wedding_sentence01"
+            android:src="@drawable/menu_sentence06"
             android:layout_width="589dp"
             android:layout_height="321dp"
             android:layout_x="146dp"
-            android:layout_y="26dp" />
+            android:layout_y="26dp"
+            android:layout_toRightOf="@+id/imageView33"
+            android:layout_toEndOf="@+id/imageView33"
+            android:id="@+id/imageView42" />
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:onClick="onClick"
             android:src="@drawable/btn_page"
             android:background="@null"
-            android:layout_marginBottom="86dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="102dp"
-            android:layout_marginEnd="102dp"
             android:layout_x="425dp"
-            android:layout_y="305dp" />
+            android:layout_y="305dp"
+            android:layout_alignBottom="@+id/imageView33"
+            android:layout_toRightOf="@+id/imageView33"
+            android:layout_toEndOf="@+id/imageView33"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="19dp" />
 
         <ImageButton
             android:id="@+id/imageButton2"
-            android:layout_width="32dp"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/btn_x"
             android:background="@null"
             android:layout_x="549dp"
-            android:layout_y="11dp" />
-    </AbsoluteLayout>
+            android:layout_y="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/imageView42"
+            android:layout_alignEnd="@+id/imageView42"
+            android:layout_marginTop="58dp" />
+    </RelativeLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>

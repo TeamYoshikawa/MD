@@ -62,22 +62,26 @@ public class Menu_Activity extends Activity implements OnClickListener {
 
 
         /*アニメーションの準備(translateAnimation)*/
-        TranslateAnimation trans_icon =new TranslateAnimation(0,0,-10,10);
+        TranslateAnimation trans_icon =new TranslateAnimation(0,0,-5,5);
+        TranslateAnimation trans_icon_var2 =new TranslateAnimation(0,0,5,-5);
        /*アニメーション起動*/
         /*無限に繰り返す*/
         trans_icon.setRepeatCount(Animation.INFINITE);
+        trans_icon_var2.setRepeatCount(Animation.INFINITE);
         /*繰り返し方の指定*/
         trans_icon.setRepeatMode(Animation.REVERSE);
+        trans_icon_var2.setRepeatMode(Animation.REVERSE);
         /* 一回ごとの実行時間間隔　1/1000 */
         trans_icon.setDuration(1000);
+        trans_icon_var2.setDuration(1000);
         /*実行*/
         transanimation.startAnimation(trans_icon);
-        transanimation2.startAnimation(trans_icon);
+        transanimation2.startAnimation(trans_icon_var2);
         transanimation3.startAnimation(trans_icon);
-        transanimation4.startAnimation(trans_icon);
+        transanimation4.startAnimation(trans_icon_var2);
         transanimation5.startAnimation(trans_icon);
-        transanimation6.startAnimation(trans_icon);
-        transanimation7.startAnimation(trans_icon);
+        transanimation6.startAnimation(trans_icon_var2);
+        transanimation7.startAnimation(trans_icon_var2);
     }
 
     @Override
@@ -109,32 +113,32 @@ public class Menu_Activity extends Activity implements OnClickListener {
                 break;
 
             case R.id.imageButton2:
-                //フレンチのページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.French.French_Activity.class);
+                //ワインのページに飛ぶボタン
+                intent = new Intent(this, hillside.hillsidegarden02.Wine.Wine_Activity02.class);
                 startActivity(intent);
                 break;
 
             case R.id.imageButton3:
-                //ワインに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Wine.Wine_Activity.class);
+                //オリジナルに飛ぶボタン
+                intent = new Intent(this, hillside.hillsidegarden02.Weddeing.Weddeing_Activity.class);
                 startActivity(intent);
                 break;
 
             case R.id.imageButton4:
-                //ガーデンのページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Garden.Garden_Activity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton5:
                 //イタリアンのページに飛ぶボタン
                 intent = new Intent(this, hillside.hillsidegarden02.Italian.Italian_Activity.class);
                 startActivity(intent);
                 break;
 
+            case R.id.imageButton5:
+                //ガーデンのページに飛ぶボタン
+                intent = new Intent(this, hillside.hillsidegarden02.Garden.Garden_Activity.class);
+                startActivity(intent);
+                break;
+
             case R.id.imageButton6:
-                //オリジナルのページに飛ぶボタン
-                intent = new Intent(this, hillside.hillsidegarden02.Weddeing.Weddeing_Activity.class);
+                //フレンチのページに飛ぶボタン
+                intent = new Intent(this, hillside.hillsidegarden02.French.French_Activity.class);
                 startActivity(intent);
                 break;
 

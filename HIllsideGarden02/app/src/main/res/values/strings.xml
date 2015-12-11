@@ -39,4 +39,10 @@
     <string name="title_activity_back_ground_gallary">BackGroundGallary</string>
     <string name="title_activity_tap">TapActivity</string>
     <string name="title_activity_camera__menu_">Camera_Menu_Activity</string>
+    <string name="title_activity_french_05">French_Activity05</string>
+    <string name="title_activity_french_04">French_Activity04</string>
+    <string name="title_activity_french_06">French_Activity06</string>
+    <string name="title_activity_italian_04">Italian_Activity04</string>
+    <string name="title_activity_italian_05">Italian_Activity05</string>
+    <string name="title_activity_italian_06">Italian_Activity06</string>
 </resources>

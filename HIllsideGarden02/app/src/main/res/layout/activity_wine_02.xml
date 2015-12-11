@@ -14,56 +14,61 @@
 
     <include layout="@layout/content_wine_02" />
 
-    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Wine_Activity02">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="未実装"
-    android:layout_x="260dp"
-    android:layout_y="171dp" />
 
+
+        <ImageView
+            android:src="@drawable/menu_image0006"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/imageView40"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:src="@drawable/menu_sentence03"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:id="@+id/imageView41"
+            android:layout_alignTop="@+id/imageView40"
+            android:layout_toRightOf="@+id/imageView40"
+            android:layout_toEndOf="@+id/imageView40" />
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:onClick="onClick"
-            android:src="@drawable/btn_left"
+            android:src="@drawable/btn_page"
             android:background="@null"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_x="1dp"
-            android:layout_y="158dp" />
+            android:layout_y="158dp"
+            android:layout_marginTop="64dp"
+            android:layout_below="@+id/imageButton2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="26dp"
+            android:layout_marginEnd="26dp" />
 
         <ImageButton
             android:background="@null"
             android:id="@+id/imageButton2"
-            android:src="@drawable/btn_top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
+            android:src="@drawable/btn_x"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_x="501dp"
-            android:layout_y="-2dp" />
-        <ImageButton
-            android:background="@null"
-            android:id="@+id/imageButton3"
-            android:src="@drawable/btn_right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/imageButton"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_x="541dp"
-            android:layout_y="156dp" />
+            android:layout_y="-2dp"
+            android:layout_marginTop="55dp"
+            android:layout_alignTop="@+id/imageView41"
+            android:layout_alignRight="@+id/imageView41"
+            android:layout_alignEnd="@+id/imageView41" />
 
-    </AbsoluteLayout>
+    </RelativeLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>

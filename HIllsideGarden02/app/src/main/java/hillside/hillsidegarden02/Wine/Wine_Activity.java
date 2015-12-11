@@ -48,14 +48,18 @@ public class Wine_Activity extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-            //タップしてね！！
+
             case R.id.imageButton:
-                intent = new Intent(this, hillside.hillsidegarden02.Wine.Wine_Activity01.class);
+                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);
                 break;
 
             case R.id.imageButton2:
-                intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Weddeing.Weddeing_Activity02.class);
+                startActivity(intent);
+                break;
+            case R.id.imageButton3:
+                intent = new Intent(this, hillside.hillsidegarden02.Wine.Wine_Activity01.class);
                 startActivity(intent);
                 break;
         }

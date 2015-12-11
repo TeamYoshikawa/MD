@@ -60,19 +60,20 @@ public class Access_Activity extends Activity implements OnClickListener {
         switch (view.getId()){
 
             case R.id.imageButton:
-                intent = new Intent(this, hillside.hillsidegarden02.Experience_Activity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton2:
                 intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);
                 break;
 
-            case R.id.imageButton3:
+            case R.id.imageButton2:
                 intent=new Intent(this,hillside.hillsidegarden02.FloorMap_Activity.class);
                 startActivity(intent);
                 break;
+
+            case R.id.imageButton3:
+                intent = new Intent(this, hillside.hillsidegarden02.Experience_Activity.class);
+                startActivity(intent);
+                break;
+            /*GoogleMap*/
             case R.id.imageButton4:
                 //intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
                 //startActivity(intent);

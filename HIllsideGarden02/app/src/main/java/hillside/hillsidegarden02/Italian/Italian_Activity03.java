@@ -13,17 +13,14 @@ import hillside.hillsidegarden02.R;
 
 public class Italian_Activity03 extends Activity implements OnClickListener {
     private ImageButton imageButton;
-    private ImageButton imageButton2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_italian_03);
         imageButton=(ImageButton)findViewById(R.id.imageButton);
-        imageButton2=(ImageButton)findViewById(R.id.imageButton2);
-
         imageButton.setOnClickListener(this);
-        imageButton2.setOnClickListener(this);
     }
 
     @Override
@@ -50,13 +47,7 @@ public class Italian_Activity03 extends Activity implements OnClickListener {
         switch (view.getId()){
 
             case R.id.imageButton:
-                intent = new Intent(this, hillside.hillsidegarden02.Menu_Activity.class);
-
-                startActivity(intent);
-                break;
-
-            case R.id.imageButton2:
-                intent=new Intent(this,hillside.hillsidegarden02.Italian.Italian_Activity02.class);
+                intent = new Intent(this, hillside.hillsidegarden02.Italian.Italian_Activity02.class);
                 startActivity(intent);
                 break;
         }

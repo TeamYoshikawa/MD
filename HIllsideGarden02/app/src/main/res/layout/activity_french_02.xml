@@ -64,21 +64,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/imageButton5"
-            android:layout_toEndOf="@+id/imageButton5"
-            android:layout_marginLeft="46dp"
-            android:layout_marginStart="46dp" />
+            android:layout_toRightOf="@+id/imageButton"
+            android:layout_toEndOf="@+id/imageButton" />
         <ImageButton
             android:background="@null"
             android:id="@+id/imageButton5"
             android:src="@drawable/flench_image04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/imageButton7"
-            android:layout_toEndOf="@+id/imageButton7"
-            android:layout_marginLeft="35dp"
-            android:layout_marginStart="35dp" />
+            android:layout_toRightOf="@+id/imageButton4"
+            android:layout_toEndOf="@+id/imageButton4" />
         <ImageButton
             android:background="@null"
             android:id="@+id/imageButton6"
@@ -86,10 +84,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/imageButton4"
-            android:layout_toEndOf="@+id/imageButton4"
-            android:layout_marginLeft="29dp"
-            android:layout_marginStart="29dp" />
+            android:layout_toLeftOf="@+id/imageButton3"
+            android:layout_toStartOf="@+id/imageButton3" />
         <ImageButton
             android:background="@null"
             android:id="@+id/imageButton7"
@@ -97,8 +93,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/imageButton"
-            android:layout_toEndOf="@+id/imageButton" />
+            android:layout_toRightOf="@+id/imageButton5"
+            android:layout_toEndOf="@+id/imageButton5"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp" />
     </RelativeLayout>
 
 

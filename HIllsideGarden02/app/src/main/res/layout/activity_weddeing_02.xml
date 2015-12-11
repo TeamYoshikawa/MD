@@ -13,7 +13,7 @@
 
     <include layout="@layout/content_weddeing_02" />
 
-    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,28 +26,48 @@
             android:layout_width="600dp"
             android:layout_height="300dp"
             android:layout_x="110dp"
-            android:layout_y="34dp" />
+            android:layout_y="34dp"
+            android:id="@+id/imageView38"
+            android:layout_marginLeft="106dp"
+            android:layout_marginStart="106dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView36"
+            android:layout_toEndOf="@+id/imageView36" />
 
         <ImageView
             android:src="@drawable/wedding_image03"
             android:layout_width="326dp"
             android:layout_height="197dp"
             android:layout_x="-14dp"
-            android:layout_y="162dp" />
+            android:layout_y="162dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView37" />
 
         <ImageView
             android:src="@drawable/wedding_image04"
             android:layout_width="213dp"
             android:layout_height="148dp"
             android:layout_x="-22dp"
-            android:layout_y="1dp" />
+            android:layout_y="1dp"
+            android:id="@+id/imageView36"
+            android:layout_above="@+id/imageView37"
+            android:layout_toLeftOf="@+id/imageView35"
+            android:layout_toStartOf="@+id/imageView35" />
 
         <ImageView
             android:src="@drawable/wedding_image05"
             android:layout_width="145dp"
             android:layout_height="128dp"
             android:layout_x="155dp"
-            android:layout_y="7dp" />
+            android:layout_y="7dp"
+            android:id="@+id/imageView35"
+            android:layout_above="@+id/imageButton2"
+            android:layout_alignRight="@+id/imageView37"
+            android:layout_alignEnd="@+id/imageView37"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="27dp" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -56,14 +76,11 @@
             android:onClick="onClick"
             android:src="@drawable/btn_top"
             android:background="@null"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="36dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="58dp"
             android:layout_x="500dp"
-            android:layout_y="0dp" />
+            android:layout_y="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -75,7 +92,9 @@
             android:layout_x="0dp"
             android:layout_y="150dp"
 
-            />
+            android:layout_alignTop="@+id/imageButton3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
         <ImageButton
             android:id="@+id/imageButton3"
             android:src="@drawable/btn_right"
@@ -85,10 +104,12 @@
             android:layout_height="50dp"
             android:layout_x="541dp"
             android:layout_y="150dp"
-            />
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
 
-    </AbsoluteLayout>
+    </RelativeLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>

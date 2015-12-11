@@ -44,7 +44,7 @@ private ImageButton imageButton;
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-        //タップしてね！！！！！！！！！！！！！！！！！！！
+        //タップしてね！！
             case R.id.imageButton:
                 intent = new Intent(this, hillside.hillsidegarden02.Menu_Activity.class);
                 startActivity(intent);

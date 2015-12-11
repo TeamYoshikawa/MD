@@ -14,8 +14,6 @@ import hillside.hillsidegarden02.R;
 public class Wine_Activity02 extends Activity implements OnClickListener {
     private ImageButton imageButton;
     private ImageButton imageButton2;
-    //未設置のボタン
-    private ImageButton imageButton3;
 
 
     @Override
@@ -24,11 +22,9 @@ public class Wine_Activity02 extends Activity implements OnClickListener {
         setContentView(R.layout.activity_wine_02);
         imageButton=(ImageButton)findViewById(R.id.imageButton);
         imageButton2=(ImageButton)findViewById(R.id.imageButton2);
-        imageButton3=(ImageButton)findViewById(R.id.imageButton3);
 
         imageButton.setOnClickListener(this);
         imageButton2.setOnClickListener(this);
-        imageButton3.setOnClickListener(this);
 
 
 
@@ -56,23 +52,18 @@ public class Wine_Activity02 extends Activity implements OnClickListener {
     public void onClick(View view){
         Intent intent;
         switch (view.getId()){
-            //←
+
             case R.id.imageButton:
-                intent=new Intent(this,hillside.hillsidegarden02.Wine.Wine_Activity01.class);
+                intent=new Intent(this,hillside.hillsidegarden02.Wine.Wine_Activity.class);
                 startActivity(intent);
                 break;
-//メニュー
             case R.id.imageButton2:
                 intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
-                startActivity(intent);
-                break;
-//→
-            case R.id.imageButton3:
-
-                intent = new Intent(this, hillside.hillsidegarden02.Staff.Staff_Activity.class);
                 startActivity(intent);
                 break;
         }
         finish();
     }
 }
+
+

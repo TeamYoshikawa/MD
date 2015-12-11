@@ -10,6 +10,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -113,13 +115,11 @@
             android:label="@string/title_activity_italian_03"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activityw
+        <activity
             android:name=".Weddeing.Weddeing_Activity"
             android:label="@string/title_activity_weddeing_"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Weddeing.Weddeing_Activity01"
             android:label="@string/title_activity_weddeing_01"
@@ -216,9 +216,39 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:screenOrientation="landscape"
             android:name=".Camera_Menu_Activity"
             android:label="@string/title_activity_camera__menu_"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".French.French_Activity05"
+            android:label="@string/title_activity_french_05"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".French.French_Activity04"
+            android:label="@string/title_activity_french_04"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".French.French_Activity06"
+            android:label="@string/title_activity_french_06"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Italian.Italian_Activity04"
+            android:label="@string/title_activity_italian_04"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Italian.Italian_Activity05"
+            android:label="@string/title_activity_italian_05"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Italian.Italian_Activity06"
+            android:label="@string/title_activity_italian_06"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>

@@ -60,40 +60,40 @@
         <ImageButton
             android:background="@null"
             android:id="@+id/imageButton4"
-            android:src="@drawable/flench_image03"
+            android:src="@drawable/italian_image03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp"
             android:layout_alignParentBottom="true"
             android:layout_toRightOf="@+id/imageButton5"
-            android:layout_toEndOf="@+id/imageButton5"
-            android:layout_marginLeft="46dp"
-            android:layout_marginStart="46dp" />
+            android:layout_toEndOf="@+id/imageButton5" />
         <ImageButton
             android:background="@null"
             android:id="@+id/imageButton5"
-            android:src="@drawable/flench_image04"
+            android:src="@drawable/italian_image04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp"
             android:layout_alignParentBottom="true"
             android:layout_toRightOf="@+id/imageButton7"
-            android:layout_toEndOf="@+id/imageButton7"
-            android:layout_marginLeft="35dp"
-            android:layout_marginStart="35dp" />
+            android:layout_toEndOf="@+id/imageButton7" />
         <ImageButton
             android:background="@null"
             android:id="@+id/imageButton6"
-            android:src="@drawable/flench_image05"
+            android:src="@drawable/italian_image05"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/imageButton4"
-            android:layout_toEndOf="@+id/imageButton4"
-            android:layout_marginLeft="29dp"
-            android:layout_marginStart="29dp" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp" />
         <ImageButton
             android:background="@null"
             android:id="@+id/imageButton7"
-            android:src="@drawable/flench_image06"
+            android:src="@drawable/italian_image06"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

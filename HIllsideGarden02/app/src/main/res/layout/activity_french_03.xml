@@ -14,7 +14,7 @@
 
     <include layout="@layout/content_french_03" />
 
-    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,44 +22,41 @@
 
 
         <ImageView
-            android:src="@drawable/flench_sentence04"
+            android:src="@drawable/flench_sentence03"
             android:layout_width="294dp"
             android:layout_height="177dp"
             android:layout_x="301dp"
-            android:layout_y="89dp" />
+            android:layout_y="89dp"
+            android:id="@+id/imageView24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageView
             android:src="@drawable/flench_image03"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_x="12dp"
-            android:layout_y="55dp" />
+            android:layout_y="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageView24"
+            android:layout_toStartOf="@+id/imageView24" />
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:src="@drawable/btn_top"
-            android:background="@null"
-            android:layout_marginTop="36dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="56dp"
-            android:layout_marginEnd="56dp"
-            android:layout_x="502dp"
-            android:layout_y="0dp" />
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:onClick="onClick"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/btn_x"
             android:background="@null"
             android:layout_x="549dp"
-            android:layout_y="77dp" />
-    </AbsoluteLayout>
+            android:layout_y="77dp"
+            android:layout_alignTop="@+id/imageView24"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>
