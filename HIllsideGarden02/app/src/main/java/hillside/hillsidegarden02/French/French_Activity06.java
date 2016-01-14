@@ -1,0 +1,53 @@
+package hillside.hillsidegarden02.French;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
+
+import hillside.hillsidegarden02.R;
+
+
+public class French_Activity06 extends Activity implements OnClickListener {
+    private ImageButton imageButton;
+    private ImageButton imageButton2;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_french_06);
+        imageButton=(ImageButton)findViewById(R.id.imageButton);
+        imageButton.setOnClickListener(this);
+
+    }
+
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+    //ボタンの処理
+    public void onClick(View view){
+        Intent intent;
+        switch (view.getId()){
+            //タップしてね！！
+            case R.id.imageButton:
+                intent = new Intent(this, hillside.hillsidegarden02.French.French_Activity02.class);
+                startActivity(intent);
+                break;
+        }
+        finish();
+    }
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="hillside.hillsidegarden02.French_Activity03">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_french_03" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".French_Activity03">
+
+
+        <ImageView
+            android:src="@drawable/flench_sentence06"
+            android:layout_width="294dp"
+            android:layout_height="177dp"
+            android:layout_x="301dp"
+            android:layout_y="89dp"
+            android:id="@+id/imageView24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:src="@drawable/flench_image06"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_x="12dp"
+            android:layout_y="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageView24"
+            android:layout_toStartOf="@+id/imageView24" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:onClick="onClick"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_x"
+            android:background="@null"
+            android:layout_x="549dp"
+            android:layout_y="77dp"
+            android:layout_alignTop="@+id/imageView24"
+            android:layout_alignRight="@+id/imageView24"
+            android:layout_alignEnd="@+id/imageView24" />
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
