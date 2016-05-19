@@ -15,7 +15,6 @@ public class Access_Activity extends Activity implements OnClickListener {
     private ImageButton imageButton;
     private ImageButton imageButton2;
     private ImageButton imageButton3;
-    private ImageButton imageButton4;
     private ImageButton imageButton5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +23,11 @@ public class Access_Activity extends Activity implements OnClickListener {
         imageButton=(ImageButton)findViewById(R.id.imageButton);
         imageButton2=(ImageButton)findViewById(R.id.imageButton2);
         imageButton3=(ImageButton)findViewById(R.id.imageButton3);
-        imageButton4=(ImageButton)findViewById(R.id.imageButton4);
         imageButton5=(ImageButton)findViewById(R.id.imageButton5);
 
         imageButton.setOnClickListener(this);
         imageButton2.setOnClickListener(this);
         imageButton3.setOnClickListener(this);
-        imageButton4.setOnClickListener(this);
         imageButton5.setOnClickListener(this);
 
 
@@ -72,11 +69,6 @@ public class Access_Activity extends Activity implements OnClickListener {
             case R.id.imageButton3:
                 intent = new Intent(this, hillside.hillsidegarden02.Experience_Activity.class);
                 startActivity(intent);
-                break;
-            /*GoogleMap*/
-            case R.id.imageButton4:
-                //intent=new Intent(this,hillside.hillsidegarden02.Menu_Activity.class);
-                //startActivity(intent);
                 break;
 
             case R.id.imageButton5:
